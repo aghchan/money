@@ -92,10 +92,11 @@ func (this stockService) GetStockEarnings() error {
 			this.stockEarningsSeen[*stock.Symbol] = true
 			found = true
 		}
+		// TODO: 37 minute delay? 1636407366.298318 need about 5 min or so on LOTZ
 	}
 
 	if !found {
-		this.logger.Infow(
+		this.logger.Debugw(
 			"No stocks worth buying found",
 		)
 	}
