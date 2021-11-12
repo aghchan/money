@@ -8,8 +8,8 @@ import (
 )
 
 type StockController struct {
-	StockService stock.StockService
-	Twilio       twilio.TwilioService
+	StockService stock.Service
+	Twilio       twilio.Service
 }
 
 func (this StockController) GET(w http.ResponseWriter, req *http.Request) {

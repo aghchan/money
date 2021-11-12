@@ -1,0 +1,2 @@
+# Get Private Repo
+GOPRIVATE="github.com/aghchan/*" go get -u github.com/aghchan/simplegoapp

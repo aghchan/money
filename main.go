@@ -22,7 +22,7 @@ func main() {
 	}
 	services := []interface{}{
 		twilio.NewService,
-		stock.NewStockService,
+		stock.NewService,
 	}
 
 	server := app.NewApp("localhost", 8081, config, routes, services)

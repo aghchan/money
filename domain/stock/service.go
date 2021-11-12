@@ -10,17 +10,17 @@ import (
 	"go.uber.org/zap"
 )
 
-type StockService interface {
+type Service interface {
 	GetStockEarnings() error
 }
 
-func NewStockService(logger *zap.SugaredLogger) StockService {
-	ss := stockService{
+func NewService(logger *zap.SugaredLogger) Service {
+	ss := service{
 		logger:            logger,
 		stockEarningsSeen: make(map[string]bool),
 	}
 
-	go func(ss *stockService) {
+	go func(ss *service) {
 		ss.logger.Infow("started up the earnings poller")
 
 		ticker := time.NewTicker(1 * time.Second)
@@ -33,13 +33,13 @@ func NewStockService(logger *zap.SugaredLogger) StockService {
 	return &ss
 }
 
-type stockService struct {
+type service struct {
 	logger *zap.SugaredLogger
 
 	stockEarningsSeen map[string]bool
 }
 
-func (this stockService) GetStockEarnings() error {
+func (this service) GetStockEarnings() error {
 	cfg := finnhub.NewConfiguration()
 	cfg.AddDefaultHeader("X-Finnhub-Token", "c64cv62ad3i8bn4fj430")
 	finnhubClient := finnhub.NewAPIClient(cfg).DefaultApi
