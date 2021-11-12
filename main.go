@@ -9,10 +9,10 @@ import (
 
 type config struct {
 	Twilio struct {
-		AccountSid  string `yml:"account_sid"`
-		AuthToken   string `yml:"account_sid"`
-		PhoneNumber string `yml:"account_sid" config:"twilio_number"`
-	} `yml:"twilio"`
+		AccountSid  string `yaml:"account_sid" env:"TWILIO_ACCOUNT_SID"`
+		AuthToken   string `yaml:"auth_token" env:"TWILIO_AUTH_TOKEN"`
+		PhoneNumber string `yaml:"phone_number" config:"twilio_number"`
+	} `yaml:"twilio"`
 }
 
 func main() {
