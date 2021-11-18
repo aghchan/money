@@ -7,21 +7,21 @@ import (
 	"time"
 
 	"github.com/Finnhub-Stock-API/finnhub-go/v2"
-	"go.uber.org/zap"
+	"github.com/aghchan/simplegoapp/pkg/logger"
 )
 
 type Service interface {
 	GetStockEarnings() error
 }
 
-func NewService(logger *zap.SugaredLogger) Service {
+func NewService(logger logger.Logger) Service {
 	ss := service{
 		logger:            logger,
 		stockEarningsSeen: make(map[string]bool),
 	}
 
 	go func(ss *service) {
-		ss.logger.Infow("started up the earnings poller")
+		ss.logger.Info("started up the earnings poller")
 
 		ticker := time.NewTicker(1 * time.Second)
 		defer ticker.Stop()
@@ -34,7 +34,7 @@ func NewService(logger *zap.SugaredLogger) Service {
 }
 
 type service struct {
-	logger *zap.SugaredLogger
+	logger logger.Logger
 
 	stockEarningsSeen map[string]bool
 }
@@ -51,7 +51,7 @@ func (this service) GetStockEarnings() error {
 			err = errors.New("missing earnings calendar data")
 		}
 
-		this.logger.Errorw(
+		this.logger.Error(
 			"Getting earnings calendar",
 			"err", err,
 		)
@@ -64,7 +64,7 @@ func (this service) GetStockEarnings() error {
 	for _, stock := range *earningsCalendar.EarningsCalendar {
 		earningsDate, err := time.Parse("2006-01-02", *stock.Date)
 		if err != nil {
-			this.logger.Errorw(
+			this.logger.Error(
 				"Parsing earnings date",
 				"err", err,
 				"stock", stock,
@@ -83,7 +83,7 @@ func (this service) GetStockEarnings() error {
 			stock.GetEpsActual() >= (stock.GetEpsEstimate()*1.1) &&
 			stock.GetRevenueActual() >= (stock.GetRevenueEstimate()*1.1) {
 
-			this.logger.Warnw(
+			this.logger.Warn(
 				"Checkout this stock",
 				"symbol", stock.Symbol,
 				"stock", stock,
@@ -96,7 +96,7 @@ func (this service) GetStockEarnings() error {
 	}
 
 	if !found {
-		this.logger.Debugw(
+		this.logger.Info(
 			"No stocks worth buying found",
 		)
 	}

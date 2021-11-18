@@ -35,8 +35,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/Finnhub-Stock-API/finnhub-go/v2 v2.0.6 h1:0AqAqCqga7NMS2ReeVZ4vk3iVRbKygNqBfTRclvXwiU=
 github.com/Finnhub-Stock-API/finnhub-go/v2 v2.0.6/go.mod h1:QMfTqyJoQPPsDu6yAvVaTXSLtN0v8rBIn61fgzUN6CM=
-github.com/aghchan/simplegoapp v0.0.0-20211112061319-1dec0227f69e h1:uqRYn86BZtfWb7dcNMLx5zf6QTocQYYFRWEMITgqQjs=
-github.com/aghchan/simplegoapp v0.0.0-20211112061319-1dec0227f69e/go.mod h1:tBfD2pJzWbq1lINlQGnHkeK0fztwTEPXzg5P0FU+UO8=
+github.com/aghchan/simplegoapp v0.0.0-20211118080343-77b802c62201 h1:UCiL77CVKoHMir5cDLCDUjIJa5IE3M9aYKB/1COIpwI=
+github.com/aghchan/simplegoapp v0.0.0-20211118080343-77b802c62201/go.mod h1:tBfD2pJzWbq1lINlQGnHkeK0fztwTEPXzg5P0FU+UO8=
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
