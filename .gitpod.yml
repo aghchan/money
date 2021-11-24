@@ -1,2 +1,8 @@
 image:
   file: .gitpod.dockerfile
+tasks:
+  - command: redis-server --daemonize yes
+  - command: export GITHUB_TOKEN=mKkLNrkKormlvZuouW7zzY9r8Modw70bNbkc
+  - command: export GOPRIVATE=github.com/aghchan
+  - command: export GOPROXY=direct
+  - command: git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf https://github.com/
