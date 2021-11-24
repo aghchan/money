@@ -1,3 +1,2 @@
-tasks:
-  - name: socket client
-    command: npm install -g wscat
+image:
+  file: .gitpod.dockerfile
