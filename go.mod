@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/Finnhub-Stock-API/finnhub-go/v2 v2.0.6
-	github.com/aghchan/simplegoapp v0.0.0-20211124074243-1d735d3f6287
+	github.com/aghchan/simplegoapp v0.0.0-20211124095855-f4cbcef3b554
 )
 
 require (

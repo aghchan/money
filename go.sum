@@ -39,6 +39,10 @@ github.com/aghchan/simplegoapp v0.0.0-20211124070336-0d8b08a56d00 h1:FZmiy/T7lma
 github.com/aghchan/simplegoapp v0.0.0-20211124070336-0d8b08a56d00/go.mod h1:gSFPOYz/BOo1xtqWEY3exHw+8566T65Yzy7cTW7+vNw=
 github.com/aghchan/simplegoapp v0.0.0-20211124074243-1d735d3f6287 h1:nI37yNR3OVBgmjG5ReQRyCZhZ8JqbAdE/d1AJlvJYUo=
 github.com/aghchan/simplegoapp v0.0.0-20211124074243-1d735d3f6287/go.mod h1:gSFPOYz/BOo1xtqWEY3exHw+8566T65Yzy7cTW7+vNw=
+github.com/aghchan/simplegoapp v0.0.0-20211124093112-bde3f0ae8c45 h1:HWyXBjMm5lyzMBj95+tcYgiW1Nke8TWekPBMyL/xOJo=
+github.com/aghchan/simplegoapp v0.0.0-20211124093112-bde3f0ae8c45/go.mod h1:gSFPOYz/BOo1xtqWEY3exHw+8566T65Yzy7cTW7+vNw=
+github.com/aghchan/simplegoapp v0.0.0-20211124095855-f4cbcef3b554 h1:3aYD3KgdrWMOpWrjLCH3RCtaxKvwT5PGZ3m+ru7t/q8=
+github.com/aghchan/simplegoapp v0.0.0-20211124095855-f4cbcef3b554/go.mod h1:gSFPOYz/BOo1xtqWEY3exHw+8566T65Yzy7cTW7+vNw=
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
