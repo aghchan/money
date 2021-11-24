@@ -19,6 +19,7 @@ func main() {
 	config := &config{}
 	routes := []interface{}{
 		"/stock/earnings", &controller.StockController{},
+		"/test/socket", &controller.StockSocketController{},
 	}
 	services := []interface{}{
 		twilio.NewService,

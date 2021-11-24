@@ -4,13 +4,15 @@ go 1.17
 
 require (
 	github.com/Finnhub-Stock-API/finnhub-go/v2 v2.0.6
-	github.com/aghchan/simplegoapp v0.0.0-20211118080343-77b802c62201
+	github.com/aghchan/simplegoapp v0.0.0-20211124070336-0d8b08a56d00
 )
 
 require (
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
+	github.com/gorilla/schema v1.2.0 // indirect
+	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/twilio/twilio-go v0.18.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect

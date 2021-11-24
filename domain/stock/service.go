@@ -59,8 +59,6 @@ func (this service) GetStockEarnings() error {
 		return err
 	}
 
-	found := false
-
 	for _, stock := range *earningsCalendar.EarningsCalendar {
 		earningsDate, err := time.Parse("2006-01-02", *stock.Date)
 		if err != nil {
@@ -90,17 +88,10 @@ func (this service) GetStockEarnings() error {
 			)
 
 			this.stockEarningsSeen[*stock.Symbol] = true
-			found = true
 		}
 		// TODO: 37 minute delay? 1636407366.298318 need about 5 min or so on LOTZ
 	}
-
-	if !found {
-		this.logger.Info(
-			"No stocks worth buying found",
-		)
-	}
-
+	
 	return nil
 }
 

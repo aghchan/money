@@ -35,8 +35,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/Finnhub-Stock-API/finnhub-go/v2 v2.0.6 h1:0AqAqCqga7NMS2ReeVZ4vk3iVRbKygNqBfTRclvXwiU=
 github.com/Finnhub-Stock-API/finnhub-go/v2 v2.0.6/go.mod h1:QMfTqyJoQPPsDu6yAvVaTXSLtN0v8rBIn61fgzUN6CM=
-github.com/aghchan/simplegoapp v0.0.0-20211118080343-77b802c62201 h1:UCiL77CVKoHMir5cDLCDUjIJa5IE3M9aYKB/1COIpwI=
-github.com/aghchan/simplegoapp v0.0.0-20211118080343-77b802c62201/go.mod h1:tBfD2pJzWbq1lINlQGnHkeK0fztwTEPXzg5P0FU+UO8=
+github.com/aghchan/simplegoapp v0.0.0-20211124070336-0d8b08a56d00 h1:FZmiy/T7lma0KyzhraScX/5QDswymQDDQ8sBJ+n/WAM=
+github.com/aghchan/simplegoapp v0.0.0-20211124070336-0d8b08a56d00/go.mod h1:gSFPOYz/BOo1xtqWEY3exHw+8566T65Yzy7cTW7+vNw=
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
@@ -111,7 +111,10 @@ github.com/googleapis/gax-go/v2 v2.0.4/go.mod h1:0Wqv26UfaUD9n4G6kQubkQ+KchISgw+
 github.com/googleapis/gax-go/v2 v2.0.5/go.mod h1:DWXyrwAJ9X0FpwwEdw+IPEYBICEFu5mhpdKc/us6bOk=
 github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/gorilla/schema v1.2.0 h1:YufUaxZYCKGFuAq3c96BOhjgd5nmXiOY9NGzF247Tsc=
 github.com/gorilla/schema v1.2.0/go.mod h1:kgLaKoK1FELgZqMAVxx/5cbj0kT+57qxUrAlIO2eleU=
+github.com/gorilla/websocket v1.4.2 h1:+/TMaTYc4QFitKJxsQ7Yye35DkWvkdLcvGKqM+x0Ufc=
+github.com/gorilla/websocket v1.4.2/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
 github.com/hashicorp/golang-lru v0.5.0/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
 github.com/hashicorp/golang-lru v0.5.1/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
 github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
