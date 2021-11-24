@@ -5,11 +5,12 @@ import (
 
 	"github.com/aghchan/money/domain/stock"
 	"github.com/aghchan/simplegoapp/pkg/http"
-	"github.com/aghchan/simplegoapp/pkg/logger"
 	"github.com/aghchan/simplegoapp/pkg/twilio"
 )
 
 type StockController struct {
+	http.Controller
+
 	StockService stock.Service
 	Twilio       twilio.Service
 }
@@ -19,7 +20,7 @@ func (this StockController) GET(w http.ResponseWriter, req *http.Request) {
 }
 
 type StockSocketController struct {
-	Logger logger.Logger
+	http.Controller
 }
 
 func (this StockSocketController) SOCKET(w http.ResponseWriter, req *http.Request) {
